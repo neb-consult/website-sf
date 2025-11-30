@@ -140,15 +140,13 @@ button {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 600;
-    letter-spacing: 0.15em;
-    color: var(--text-primary);
-    transition: color var(--transition-fast);
+    display: flex;
+    align-items: center;
 }
 
-.logo:hover {
-    color: var(--accent-cyan);
+.logo img {
+    height: 32px;
+    width: auto;
 }
 
 .nav {
@@ -304,6 +302,12 @@ button {
     padding: var(--space-xs) var(--space-sm);
     border: 1px solid rgba(58, 229, 255, 0.3);
     background-color: rgba(58, 229, 255, 0.05);
+}
+
+.hero-logo {
+    max-width: clamp(300px, 50vw, 500px);
+    height: auto;
+    margin-bottom: var(--space-lg);
 }
 
 .hero-title {
